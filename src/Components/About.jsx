@@ -66,7 +66,7 @@ function About() {
                                     <FaBullhorn />
                                 </div>
                                 <h4 className="font-bold text-lg">Creative Impact</h4>
-                                <p className="text-gray-400 text-sm mt-2">
+                                <p className="text-gray-400 text-sm mt-2 pb-5">
                                     Web interfaces that help brands grow and audiences connect.
                                 </p>
                             </div>
