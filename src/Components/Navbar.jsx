@@ -8,6 +8,7 @@ import {
   FaTimes,
   FaGithub,
   FaWhatsapp,
+  FaLinkedin,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
@@ -86,8 +87,8 @@ function Navbar() {
           <Link
             to="/"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/"
-                ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
-                : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
+              ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
+              : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
             Home
@@ -95,8 +96,8 @@ function Navbar() {
           <Link
             to="/pricing"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/pricing"
-                ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
-                : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
+              ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
+              : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
             Pricing
@@ -104,8 +105,8 @@ function Navbar() {
           <Link
             to="/contact"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/contact"
-                ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
-                : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
+              ? "bg-pink-600/40 text-white shadow-[0_0_10px_#ff008c]"
+              : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
             Contact
@@ -145,8 +146,8 @@ function Navbar() {
       </div>
       <div
         className={`md:hidden absolute inset-x-0 top-full bg-zinc-900/80 backdrop-blur-lg flex flex-col items-center space-y-4 py-6 transition-all duration-500 ${isOpen
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-5 pointer-events-none"
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-5 pointer-events-none"
           }`}
       >
         <Link
@@ -171,17 +172,14 @@ function Navbar() {
           Contact
         </Link>
         <div className="flex flex-wrap justify-center space-x-4 pt-3">
-          <a href="#" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
-            <FaInstagram className="text-white transition-all duration-300 hover:scale-125" />
+          <a href="https://github.com/Ubaidullah-Web-Dev?tab=repositories" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
+            <FaGithub className="text-white transition-all duration-300 hover:scale-125" />
           </a>
-          <a href="#" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
-            <FaLinkedinIn className="text-white transition-all duration-300 hover:scale-125" />
+          <a href="https://www.linkedin.com/in/ubaidullah-sajid-21792a383/" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
+            <FaLinkedin className="text-white transition-all duration-300 hover:scale-125" />
           </a>
-          <a href="#" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
-            <FaTwitter className="text-white transition-all duration-300 hover:scale-125" />
-          </a>
-          <a href="#" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
-            <FaFacebookF className="text-white transition-all duration-300 hover:scale-125" />
+          <a href="https://wa.me/923287231804" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
+            <FaWhatsapp className="text-white transition-all duration-300 hover:scale-125" />
           </a>
         </div>
       </div>
