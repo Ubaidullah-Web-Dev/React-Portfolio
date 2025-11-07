@@ -20,7 +20,6 @@ function Hero() {
       }}
     >
       <div data-aos="fade-up" data-aos-delay="100" className="relative container mx-auto px-6 py-28 md:py-40 flex flex-col items-start justify-center">
-        <p>this is a para</p>
         <p className="text-white font-extrabold uppercase text-md">
           {heroData.greeting}
         </p>
