@@ -1,21 +1,24 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { useSiteData } from "../context/SiteDataContext";
+
 
 function LatestService() {
+
+    const { service } = useSiteData();
+
+
     return (
         <section className="relative bg-black text-white pt-20 pb-20 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div data-aos="fade-right" data-aos-delay="100" className="text-center max-w-2xl mx-auto mb-16">
                     <p className="text-pink-600 uppercase font-semibold tracking-widest text-sm mb-3">
-                        What I Do
+                        {service.caption}
                     </p>
                     <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-                        Crafting Creative Front-End<br /> Web Experiences
+                        {service.title.first}<br />{service.title.second}
                     </h2>
-                    <p className="text-gray-400">
-                        I design and develop responsive, user-friendly interfaces that bring ideas to life
-                        through modern, interactive, and visually captivating web solutions.
-                    </p>
+                    <p className="text-gray-400">{service.description}</p>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -29,12 +32,9 @@ function LatestService() {
                         >
                             <div className="bg-zinc-900 border hover:bg-pink-600/30 transition-all duration-500 border-gray-700 hover:border-pink-600 rounded-2xl p-6 shadow-lg backdrop-blur-md">
                                 <h3 className="font-bold text-lg mb-2">
-                                    <span className="text-pink-600 mr-2">01.</span> Modern UI Development
+                                    <span className="text-pink-600 mr-2">01.</span>{service.left.card1.title}
                                 </h3>
-                                <p className="text-gray-400 text-sm">
-                                    I craft visually appealing layouts using clean code, smooth animations,
-                                    and a mobile-first approach to ensure an excellent user experience.
-                                </p>
+                                <p className="text-gray-400 text-sm">{service.left.card1.description}</p>
                             </div>
                         </Tilt>
 
@@ -47,12 +47,9 @@ function LatestService() {
                         >
                             <div className="bg-zinc-900 border hover:bg-pink-600/30 transition-all duration-500 border-gray-700 hover:border-pink-600 rounded-2xl p-6 shadow-lg backdrop-blur-md">
                                 <h3 className="font-bold text-lg mb-2">
-                                    <span className="text-pink-600 mr-2">02.</span> Responsive Web Design
+                                    <span className="text-pink-600 mr-2">02.</span>{service.left.card2.title}
                                 </h3>
-                                <p className="text-gray-400 text-sm">
-                                    Every project I build adapts perfectly to all device sizes — giving users a
-                                    smooth and consistent experience on phones, tablets, and desktops.
-                                </p>
+                                <p className="text-gray-400 text-sm">{service.left.card2.description}</p>
                             </div>
                         </Tilt>
 
@@ -65,12 +62,9 @@ function LatestService() {
                         >
                             <div className="bg-zinc-900 border hover:bg-pink-600/30 transition-all duration-500 border-gray-700 hover:border-pink-600 rounded-2xl p-6 shadow-lg backdrop-blur-md">
                                 <h3 className="font-bold text-lg mb-2">
-                                    <span className="text-pink-600 mr-2">03.</span> Creative Interactions
+                                    <span className="text-pink-600 mr-2">03.</span>{service.left.card3.title}
                                 </h3>
-                                <p className="text-gray-400 text-sm">
-                                    From smooth animations to fun interactions — I make websites feel alive,
-                                    memorable, and full of personality.
-                                </p>
+                                <p className="text-gray-400 text-sm">{service.left.card3.description}</p>
                             </div>
                         </Tilt>
                     </div>

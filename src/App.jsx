@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import MainPage from "./Components/MainPage";
 import Pricing from "./Components/Pricing";
 import Contact from "./Components/Contact";
@@ -9,6 +10,8 @@ import Navbar from "./Components/Navbar";
 import ScrollProgress from "./Components/ScrollProgress";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
 import Footer from "./Components/Footer";
+
+import { SiteDataProvider } from "./context/SiteDataContext";
 
 function App() {
   useEffect(() => {
@@ -21,11 +24,9 @@ function App() {
     });
   }, []);
 
-
   return (
-    <>
+    <SiteDataProvider>
       <Router>
-
         <ScrollProgress />
         <ScrollToTopButton />
         <Navbar />
@@ -36,8 +37,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <Footer/>
-    </>
+
+      <Footer />
+    </SiteDataProvider>
   );
 }
 

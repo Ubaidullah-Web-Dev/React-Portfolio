@@ -1,8 +1,14 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { FaLock, FaPenNib, FaBullhorn } from "react-icons/fa";
+import { useSiteData } from "../context/SiteDataContext";
+
+
 
 function About() {
+    const { about } = useSiteData();
+
+
     return (
         <section className="relative bg-black text-white pt-20 overflow-hidden">
             <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -12,9 +18,9 @@ function About() {
 
                     <Tilt glareEnable={true} glareMaxOpacity={0.3} tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <div className="relative bg-linear-to-b from-pink-700/40 to-black/60 border border-gray-700 hover:border-pink-600 hover:bg-pink-600/30 transition-colors duration-300 rounded-2xl p-10 text-center shadow-lg backdrop-blur-md">
-                            <h1 className="text-6xl font-extrabold mb-3">Front-End</h1>
+                            <h1 className="text-6xl font-extrabold mb-3">{about.left.card1.title}</h1>
                             <p className="text-2xl font-bold leading-snug">
-                                Developer &<br />UI Enthusiast
+                                {about.left.card1.description.first}<br />{about.left.card1.description.second}
                             </p>
                         </div>
                     </Tilt>
@@ -25,8 +31,8 @@ function About() {
                                 <FaLock className="text-pink-600 text-2xl" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold">Pixel Perfect UI</h3>
-                                <p className="text-gray-400 text-sm">Responsive & Modern Layouts</p>
+                                <h3 className="text-xl font-bold">{about.left.card2.title}</h3>
+                                <p className="text-gray-400 text-sm">{about.left.card2.description}</p>
                             </div>
                         </div>
                     </Tilt>
@@ -35,16 +41,12 @@ function About() {
                 <div data-aos="fade-up" data-aos-delay="100" className="relative space-y-6 text-center md:text-left">
                     <div>
                         <p className="text-pink-600 font-semibold uppercase tracking-widest">
-                            About Me
+                            {about.right.caption}
                         </p>
                         <h2 className="text-4xl md:text-5xl font-extrabold leading-snug">
-                            Turning Concepts into<br />Interactive Experiences
+                            {about.right.title.first}<br />{about.right.title.second}
                         </h2>
-                        <p className="text-gray-400 max-w-lg">
-                            I'm a frontend developer who loves turning ideas into smooth, interactive, and
-                            visually striking digital experiences. I focus on performance, pixel-perfect
-                            UI, and making the web a more delightful place.
-                        </p>
+                        <p className="text-gray-400 max-w-lg">{about.right.description}</p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-6 pt-4">
@@ -53,10 +55,8 @@ function About() {
                                 <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded-full mb-3">
                                     <FaPenNib />
                                 </div>
-                                <h4 className="font-bold text-lg">UI Solutions</h4>
-                                <p className="text-gray-400 text-sm mt-2">
-                                    Crafting sleek and scalable UI solutions with a focus on intuitive design.
-                                </p>
+                                <h4 className="font-bold text-lg">{about.right.card1.title}</h4>
+                                <p className="text-gray-400 text-sm mt-2">{about.right.card1.description}</p>
                             </div>
                         </Tilt>
 
@@ -65,10 +65,8 @@ function About() {
                                 <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded-full mb-3">
                                     <FaBullhorn />
                                 </div>
-                                <h4 className="font-bold text-lg">Creative Impact</h4>
-                                <p className="text-gray-400 text-sm mt-2 pb-5">
-                                    Web interfaces that help brands grow and audiences connect.
-                                </p>
+                                <h4 className="font-bold text-lg">{about.right.card2.title}</h4>
+                                <p className="text-gray-400 text-sm mt-2 pb-5">{about.right.card2.description}</p>
                             </div>
                         </Tilt>
                     </div>

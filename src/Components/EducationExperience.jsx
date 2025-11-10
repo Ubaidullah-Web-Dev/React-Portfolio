@@ -1,25 +1,26 @@
 import Tilt from "react-parallax-tilt";
+import { useSiteData } from "../context/SiteDataContext";
+
 
 function EducationExperience() {
+
+    const { eduandexp } = useSiteData();
+
+
     return (
         <section className="bg-black text-white py-20 md:py-28 overflow-hidden">
             <div className="container mx-auto px-6">
-
-                {/* Section Header */}
                 <div data-aos="fade-left" data-aos-delay="100" className="text-center mb-16">
                     <p className="text-pink-600 uppercase font-semibold tracking-widest text-sm mb-2">
-                        Education & Experience
+                        {eduandexp.caption}
                     </p>
                     <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
-                        Growing Skills Through Code & Creativity
+                        {eduandexp.title}
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                        A journey of continuous learning — from foundational studies to building unique
-                        and performance-driven web experiences.
+                        {eduandexp.description}
                     </p>
                 </div>
-
-                {/* Education */}
                 <div data-aos="fade-right" data-aos-delay="150" className="mb-6 flex items-center gap-2">
                     <h3 className="text-xl font-bold">Education</h3>
                     <div className="h-px w-12 bg-gray-600"></div>
@@ -28,28 +29,24 @@ function EducationExperience() {
                 <div className="grid md:grid-cols-2 gap-6 mb-20">
                     <Tilt glareEnable glareMaxOpacity={0.25} tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <div className="bg-zinc-900 hover:bg-pink-600/30 transition-colors duration-300 p-6 rounded-2xl border border-gray-700 hover:border-pink-600">
-                            <h4 className="font-semibold mb-1">Bachelor in Computer Science</h4>
-                            <p className="text-gray-300 text-sm font-semibold mb-2">2019 – 2023</p>
+                            <h4 className="font-semibold mb-1">{eduandexp.education.card1.title}</h4>
+                            <p className="text-gray-300 text-sm font-semibold mb-2">{eduandexp.education.card1.time}</p>
                             <p className="text-gray-400 text-sm leading-relaxed">
-                                Built strong fundamentals in programming, web technologies,
-                                and problem-solving with hands-on project development.
+                                {eduandexp.education.card1.description}
                             </p>
                         </div>
                     </Tilt>
 
                     <Tilt glareEnable glareMaxOpacity={0.25} tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <div className="bg-zinc-900 hover:bg-pink-600/30 transition-colors duration-300 p-6 rounded-2xl border border-gray-700 hover:border-pink-600">
-                            <h4 className="font-semibold mb-1">Frontend Development Course</h4>
-                            <p className="text-gray-300 text-sm font-semibold mb-2">2023 – Present</p>
+                            <h4 className="font-semibold mb-1">{eduandexp.education.card2.title}</h4>
+                            <p className="text-gray-300 text-sm font-semibold mb-2">{eduandexp.education.card2.time}</p>
                             <p className="text-gray-400 text-sm leading-relaxed">
-                                Specialized in HTML, CSS, JavaScript, React, Tailwind, and UI best practices,
-                                ensuring strong design + development workflow.
+                                {eduandexp.education.card2.description}
                             </p>
                         </div>
                     </Tilt>
                 </div>
-
-                {/* Experience */}
                 <div data-aos="fade-up" data-aos-delay="150" className="mb-6 mt-16 flex items-center gap-2">
                     <h3 className="text-xl font-bold">Experience</h3>
                     <div className="h-px w-12 bg-gray-600"></div>
@@ -59,30 +56,26 @@ function EducationExperience() {
                     <div>
                         <Tilt glareEnable glareMaxOpacity={0.25} tiltMaxAngleX={10} tiltMaxAngleY={10}>
                             <div className="mb-10 p-6 bg-zinc-900 rounded-2xl border border-gray-700 hover:border-pink-600 hover:bg-pink-600/30 transition-colors duration-300">
-                                <p className="text-pink-600 uppercase font-semibold text-sm mb-1">Internship</p>
-                                <h4 className="text-xl font-bold mb-1">Frontend Developer Intern</h4>
-                                <p className="text-gray-300 text-sm font-semibold mb-3">Creative Web Agency — 6 Months</p>
+                                <p className="text-pink-600 uppercase font-semibold text-sm mb-1">{eduandexp.experience.card1.caption}</p>
+                                <h4 className="text-xl font-bold mb-1">{eduandexp.experience.card1.title}</h4>
+                                <p className="text-gray-300 text-sm font-semibold mb-3">{eduandexp.experience.card1.time}</p>
                                 <p className="text-gray-400 text-sm leading-relaxed">
-                                    Built responsive UI components, improved website performance,
-                                    and collaborated with designers to create clean modern interfaces.
+                                    {eduandexp.experience.card1.description}
                                 </p>
                             </div>
                         </Tilt>
 
                         <Tilt glareEnable glareMaxOpacity={0.25} tiltMaxAngleX={10} tiltMaxAngleY={10}>
                             <div className="p-6 bg-zinc-900 rounded-2xl border border-gray-700 hover:border-pink-600 hover:bg-pink-600/30 transition-colors duration-300">
-                                <p className="text-pink-600 uppercase font-semibold text-sm mb-1">Freelance</p>
-                                <h4 className="text-xl font-bold mb-1">React Developer</h4>
-                                <p className="text-gray-300 text-sm font-semibold mb-3">2023 – Present</p>
+                                <p className="text-pink-600 uppercase font-semibold text-sm mb-1">{eduandexp.experience.card2.caption}</p>
+                                <h4 className="text-xl font-bold mb-1">{eduandexp.experience.card2.title}</h4>
+                                <p className="text-gray-300 text-sm font-semibold mb-3">{eduandexp.experience.card2.time}</p>
                                 <p className="text-gray-400 text-sm leading-relaxed">
-                                    Worked with clients to build landing pages, portfolio websites,
-                                    and dashboards with focus on speed, usability & UI polish.
+                                    {eduandexp.experience.card2.description}
                                 </p>
                             </div>
                         </Tilt>
                     </div>
-
-                    {/* Right Side Image */}
                     <div data-aos="fade-up" data-aos-delay="300" className="relative h-full min-h-[400px] flex justify-center items-center">
                         <Tilt
                             tiltMaxAngleX={10}

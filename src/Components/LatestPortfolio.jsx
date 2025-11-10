@@ -1,7 +1,14 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { useSiteData } from "../context/SiteDataContext";
+
+
 
 function LatestPortfolio() {
+
+    const { portfolio } = useSiteData();
+
+
     return (
         <section className="bg-black text-white pb-20 md:py-28">
             <div className="container mx-auto px-6 text-center">
@@ -10,22 +17,21 @@ function LatestPortfolio() {
                     data-aos-delay="100"
                     className="text-pink-600 uppercase font-semibold tracking-widest text-sm mb-2"
                 >
-                    Latest Projects
+                    {portfolio.caption}
                 </p>
                 <h2
                     data-aos="fade-left"
                     data-aos-delay="200"
                     className="text-3xl md:text-5xl font-extrabold mb-4"
                 >
-                    Transforming Ideas into Functional Web Experiences
+                    {portfolio.title}
                 </h2>
                 <p
                     data-aos="fade-left"
                     data-aos-delay="300"
                     className="text-gray-400 max-w-2xl mx-auto mb-10 text-sm md:text-base"
                 >
-                    A collection of my front-end projects built with creativity, clean code,
-                    and a strong focus on smooth user experience and responsive design.
+                    {portfolio.description}
                 </p>
                 <div
                     data-aos="fade-left"

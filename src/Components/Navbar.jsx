@@ -11,11 +11,16 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import { useSiteData } from "../context/SiteDataContext";
+
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  const { navbar } = useSiteData();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +29,8 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  
 
   return (
     <nav
@@ -91,7 +98,7 @@ function Navbar() {
               : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
-            Home
+            {navbar.middle.first}
           </Link>
           <Link
             to="/pricing"
@@ -100,7 +107,7 @@ function Navbar() {
               : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
-            Pricing
+            {navbar.middle.second}
           </Link>
           <Link
             to="/contact"
@@ -109,7 +116,7 @@ function Navbar() {
               : "text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"
               }`}
           >
-            Contact
+            {navbar.middle.third}
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-3 shrink-0">
@@ -155,21 +162,21 @@ function Navbar() {
           onClick={() => setIsOpen(false)}
           className="text-white text-lg font-medium hover:text-pink-500 transition-all duration-300"
         >
-          Home
+          {navbar.middle.first}
         </Link>
         <Link
           to="/pricing"
           onClick={() => setIsOpen(false)}
           className="text-white text-lg font-medium hover:text-pink-500 transition-all duration-300"
         >
-          Pricing
+          {navbar.middle.second}
         </Link>
         <Link
           to="/contact"
           onClick={() => setIsOpen(false)}
           className="text-white text-lg font-medium hover:text-pink-500 transition-all duration-300"
         >
-          Contact
+          {navbar.middle.third}
         </Link>
         <div className="flex flex-wrap justify-center space-x-4 pt-3">
           <a href="https://github.com/Ubaidullah-Web-Dev?tab=repositories" className="bg-gray-800 hover:bg-pink-600 p-2 rounded-full">

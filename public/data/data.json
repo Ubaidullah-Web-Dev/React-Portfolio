@@ -1,0 +1,136 @@
+{
+    "navbar": {
+        "middle": {
+            "first": "Home",
+            "second": "Pricing",
+            "third": "Contact"
+        }
+    },
+    "hero": {
+        "greetings": "HELLO",
+        "name": "I'm Ubaidullah",
+        "typed": [
+            "A Front-End Developer",
+            "A Creative Thinker",
+            "A Web Developer"
+        ],
+        "description": "Front-end creativity brought to life with clean visuals and joyful interactions. ",
+        "button": "View Projects"
+    },
+    "about": {
+        "left": {
+            "card1": {
+                "title": "Front-End",
+                "description": {
+                    "first": "Developer &",
+                    "second": "UI Enthusiast"
+                }
+            },
+            "card2": {
+                "title": "Pixel Perfect UI",
+                "description": "Responsive & Modern Layouts"
+            }
+        },
+        "right": {
+            "caption": "ABOUT ME",
+            "title": {
+                "first": "Turning Concepts into",
+                "second": "Interactive Experiences"
+            },
+            "description": "I'm a frontend developer who loves turning ideas into smooth, interactive, and visually striking digital experiences. I focus on performance, pixel-perfect UI, and making the web a more delightful place.",
+            "card1": {
+                "title": "UI Solutions",
+                "description": "Crafting sleek and scalable UI solutions with a focus on intuitive design."
+            },
+            "card2": {
+                "title": "Creative Impact",
+                "description": "Web interfaces that help brands grow and audiences connect."
+            }
+        }
+    },
+    "service": {
+        "caption": "WHAT I DO",
+        "title": {
+            "first": "Crafting Creative Front-End",
+            "second": "Web Experiences"
+        },
+        "description": "I design and develop responsive, user-friendly interfaces that bring ideas to life through modern, interactive, and visually captivating web solutions.",
+        "left": {
+            "card1": {
+                "title": "Modern UI Development",
+                "description": "I craft visually appealing layouts using clean code, smooth animations, and a mobile-first approach to ensure an excellent user experience."
+            },
+            "card2": {
+                "title": "Responsive Web Design",
+                "description": "Every project I build adapts perfectly to all device sizes — giving users a smooth and consistent experience on phones, tablets, and desktops."
+            },
+            "card3": {
+                "title": "Creative Interactions",
+                "description": "From smooth animations to fun interactions — I make websites feel alive, memorable, and full of personality."
+            }
+        }
+    },
+    "portfolio": {
+        "caption": "LATEST PROJECTS",
+        "title" : "Transforming Ideas into Functional Web Experiences",
+        "description": "A collection of my front-end projects built with creativity, clean code, and a strong focus on smooth user experience and responsive design."
+    },
+    "eduandexp": {
+        "caption": "EDUCATION & EXPERIENCE",
+        "title" : "Growing Skills Through Code & Creativity",
+        "description": "A journey of continuous learning — from foundational studies to building unique and performance-driven web experiences.",
+        "education": {
+            "card1": {
+                "title": "Bachelor in Computer Science",
+                "time": "2019 – 2023",
+                "description": "Built strong fundamentals in programming, web technologies, and problem-solving with hands-on project development."
+            },
+            "card2": {
+                "title": "Frontend Development Course",
+                "time": "2023 – Present",
+                "description": "Specialized in HTML, CSS, JavaScript, React, Tailwind, and UI best practices, ensuring strong design + development workflow."
+            }
+        },
+        "experience" : {
+            "card1" : {
+                "caption" : "INTERNSHIP",
+                "title" : "Frontend Developer Intern",
+                "time" : "Creative Web Agency — 6 Months",
+                "description" : "Built responsive UI components, improved website performance, and collaborated with designers to create clean modern interfaces."
+            },
+            "card2" : {
+                "caption" : "Freelance",
+                "title" : "React Developer",
+                "time" : "2023 – Present",
+                "description" : "Worked with clients to build landing pages, portfolio websites, and dashboards with focus on speed, usability & UI polish."
+            }
+        }
+    },
+    "footer" : {
+        "left" : {
+            "caption" : "Reeni",
+            "title" : {
+                "first" : "Get Ready ",
+                "second" : "To Create ",
+                "third" : "Great"
+            }
+        },
+        "middle" : {
+            "title" : "Quick Link",
+            "links" : {
+                "first" : "About Me",
+                "second" : "Service",
+                "third" : "Contact Me",
+                "fourth" : "Pricing"
+            }
+        },
+        "right" : {
+            "title" : "Contact",
+            "links" : {
+                "first" : "ubaidullah.web.dev@gmail.com",
+                "second" : "3891 Ranchview Dr. Richardson",
+                "third" : "03287231804"
+            }
+        }
+    }
+}
