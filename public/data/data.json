@@ -72,12 +72,12 @@
     },
     "portfolio": {
         "caption": "LATEST PROJECTS",
-        "title" : "Transforming Ideas into Functional Web Experiences",
+        "title": "Transforming Ideas into Functional Web Experiences",
         "description": "A collection of my front-end projects built with creativity, clean code, and a strong focus on smooth user experience and responsive design."
     },
     "eduandexp": {
         "caption": "EDUCATION & EXPERIENCE",
-        "title" : "Growing Skills Through Code & Creativity",
+        "title": "Growing Skills Through Code & Creativity",
         "description": "A journey of continuous learning — from foundational studies to building unique and performance-driven web experiences.",
         "education": {
             "card1": {
@@ -91,46 +91,69 @@
                 "description": "Specialized in HTML, CSS, JavaScript, React, Tailwind, and UI best practices, ensuring strong design + development workflow."
             }
         },
-        "experience" : {
-            "card1" : {
-                "caption" : "INTERNSHIP",
-                "title" : "Frontend Developer Intern",
-                "time" : "Creative Web Agency — 6 Months",
-                "description" : "Built responsive UI components, improved website performance, and collaborated with designers to create clean modern interfaces."
+        "experience": {
+            "card1": {
+                "caption": "INTERNSHIP",
+                "title": "Frontend Developer Intern",
+                "time": "Creative Web Agency — 6 Months",
+                "description": "Built responsive UI components, improved website performance, and collaborated with designers to create clean modern interfaces."
             },
-            "card2" : {
-                "caption" : "Freelance",
-                "title" : "React Developer",
-                "time" : "2023 – Present",
-                "description" : "Worked with clients to build landing pages, portfolio websites, and dashboards with focus on speed, usability & UI polish."
+            "card2": {
+                "caption": "Freelance",
+                "title": "React Developer",
+                "time": "2023 – Present",
+                "description": "Worked with clients to build landing pages, portfolio websites, and dashboards with focus on speed, usability & UI polish."
             }
         }
     },
-    "footer" : {
-        "left" : {
-            "caption" : "Reeni",
-            "title" : {
-                "first" : "Get Ready ",
-                "second" : "To Create ",
-                "third" : "Great"
+    "footer": {
+        "left": {
+            "caption": "Reeni",
+            "title": {
+                "first": "Get Ready ",
+                "second": "To Create ",
+                "third": "Great"
             }
         },
-        "middle" : {
-            "title" : "Quick Link",
-            "links" : {
-                "first" : "About Me",
-                "second" : "Service",
-                "third" : "Contact Me",
-                "fourth" : "Pricing"
+        "middle": {
+            "title": "Quick Link",
+            "links": {
+                "first": "About Me",
+                "second": "Service",
+                "third": "Contact Me",
+                "fourth": "Pricing"
             }
         },
-        "right" : {
-            "title" : "Contact",
-            "links" : {
-                "first" : "ubaidullah.web.dev@gmail.com",
-                "second" : "3891 Ranchview Dr. Richardson",
-                "third" : "03287231804"
+        "right": {
+            "title": "Contact",
+            "links": {
+                "first": "ubaidullah.web.dev@gmail.com",
+                "second": "3891 Ranchview Dr. Richardson",
+                "third": "03287231804"
             }
         }
+    },
+    "pricingpage": {
+        "title": "Our Pricing Plans",
+        "description": "Choose the perfect plan that fits your needs and start your journey with us today.",
+        "card1": {
+            "title": "Basic",
+            "price": "$19",
+            "description": "Perfect for individuals starting out."
+        },
+        "card2": {
+            "title": "Standard",
+            "price": "$49",
+            "description": "Great for growing freelancers or small teams."
+        },
+        "card3": {
+            "title": "Premium",
+            "price": "$99",
+            "description": "Best for professionals who need more."
+        }
+    },
+    "contactpage" : {
+        "title" : "Contact Us",
+        "description" : "Have a question or a project in mind? Fill out the form below, and we’ll get back to you as soon as possible."
     }
 }

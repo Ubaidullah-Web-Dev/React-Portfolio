@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import { useSiteData } from "../context/SiteDataContext";
+
 
 function Contact() {
+
+    const { contactpage } = useSiteData();
+
+
     return (
         <motion.section
             initial={{ opacity: 0, y: 30 }}
@@ -12,11 +18,10 @@ function Contact() {
         >
             <div data-aos="fade-up" data-aos-delay="100" className="text-center mb-10">
                 <h1 className="text-5xl font-extrabold text-pink-500 mb-4 tracking-tight">
-                    Contact Us
+                    {contactpage.title}
                 </h1>
                 <p className="text-gray-400 text-lg max-w-xl mx-auto">
-                    Have a question or a project in mind? Fill out the form below, and we’ll
-                    get back to you as soon as possible.
+                    {contactpage.description}
                 </p>
             </div>
             <Tilt

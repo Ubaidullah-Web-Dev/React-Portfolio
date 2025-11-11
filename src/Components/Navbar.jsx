@@ -14,7 +14,6 @@ import { Link, useLocation } from "react-router-dom";
 import { useSiteData } from "../context/SiteDataContext";
 
 
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
