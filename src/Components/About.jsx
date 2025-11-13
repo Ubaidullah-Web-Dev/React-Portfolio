@@ -7,7 +7,7 @@ function About() {
     const { about } = useSiteData();
 
     return (
-        <section className="relative bg-white dark:bg-black text-black dark:text-white pt-20 overflow-hidden transition-colors duration-500">
+        <section className="relative bg-white dark:bg-black text-black dark:text-white pt-20 overflow-hidden transition-colors duration-500 pb-5">
             <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-up" data-aos-delay="100" className="relative flex flex-col space-y-6">
                     <div className="absolute -top-10 -left-20 w-72 h-72 bg-pink-700 rounded-full blur-[150px] opacity-70"></div>

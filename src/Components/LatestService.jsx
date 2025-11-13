@@ -53,9 +53,9 @@ function LatestService() {
                         <div data-aos="fade-up" data-aos-delay="200" className="relative">
                             <div className="absolute -inset-10  bg-pink-600/30 blur-[100px] rounded-full opacity-60"></div>
                             <img
-                                src="/latest-services-user-image.png"
+                                src="/ubaidullah-CRdwo2Gg.jpg"
                                 alt="Front-End Developer"
-                                className="relative z-10 w-64 md:w-80 lg:w-96 object-contain hover:scale-105 transition-transform duration-700 ease-out"/>
+                                className="relative z-10 w-64 md:w-80 lg:w-96 object-contain hover:scale-105 transition-transform duration-700 ease-out rounded-full"/>
                         </div>
                     </Tilt>
                 </div>
