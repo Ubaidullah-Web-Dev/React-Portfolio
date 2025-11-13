@@ -12,7 +12,7 @@ function Hero() {
         backgroundImage: "url('/bg-image-3.jpg')",
         backgroundPosition: "center",
       }}>
-      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-black/40 dark:from-black/80 dark:via-black/50 dark:to-transparent backdrop-blur-[1px] transition-all duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-black/40 dark:from-black/80 dark:via-black/50 dark:to-transparent transition-all duration-500"></div>
       <div
         data-aos="fade-up"
         data-aos-delay="100"
