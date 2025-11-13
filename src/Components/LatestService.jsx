@@ -50,7 +50,7 @@ function LatestService() {
                         tiltMaxAngleX={10}
                         tiltMaxAngleY={10}
                         className="relative flex justify-center items-center">
-                        <div data-aos="fade-up" data-aos-delay="200" className="relative">
+                        <div data-aos="fade-up" data-aos-delay="100" className="relative">
                             <div className="absolute -inset-10  bg-pink-600/30 blur-[100px] rounded-full opacity-60"></div>
                             <img
                                 src="/ubaidullah-CRdwo2Gg.jpg"
