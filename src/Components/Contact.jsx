@@ -57,7 +57,7 @@ function Contact() {
                                 type="text"
                                 placeholder="Enter your name"
                                 className={
-                                    "w-full p-3 rounded-lg " +
+                                    "w-full p-2 rounded-lg " +
                                     "bg-white/90 dark:bg-zinc-900/80 " +
                                     "border border-gray-300 dark:border-zinc-700 " +
                                     "focus:outline-none focus:border-pink-500 dark:focus:border-pink-500 " +
@@ -70,7 +70,7 @@ function Contact() {
                                 type="email"
                                 placeholder="Enter your email"
                                 className={
-                                    "w-full p-3 rounded-lg " +
+                                    "w-full p-2 rounded-lg " +
                                     "bg-white/90 dark:bg-zinc-900/80 " +
                                     "border border-gray-300 dark:border-zinc-700 " +
                                     "focus:outline-none focus:border-pink-500 dark:focus:border-pink-500 " +
@@ -83,14 +83,14 @@ function Contact() {
                                 rows="3"
                                 placeholder="Write your message here..."
                                 className={
-                                    "w-full p-3 rounded-lg " +
+                                    "w-full p-2 rounded-lg " +
                                     "bg-white/90 dark:bg-zinc-900/80 " +
                                     "border border-gray-300 dark:border-zinc-700 " +
                                     "focus:outline-none focus:border-pink-500 dark:focus:border-pink-500 " +
                                     "text-black dark:text-white placeholder-gray-500 transition-all duration-300 resize-none"
                                 }></textarea>
                         </div>
-                        <div className="flex justify-center pt-4">
+                        <div className="flex justify-center pt-1">
                             <button
                                 type="submit"
                                 data-aos="zoom-in"
@@ -111,8 +111,6 @@ function Contact() {
                             key={msg.id}
                             tiltMaxAngleX={8}
                             tiltMaxAngleY={8}
-                            glareEnable
-                            glareMaxOpacity={0.15}
                             className="bg-white/90 dark:bg-zinc-800/80 border border-gray-300 dark:border-zinc-700 rounded-2xl p-6 shadow-xl relative">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
