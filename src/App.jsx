@@ -27,7 +27,6 @@ function App() {
 
   return (
     <SiteDataProvider>
-      {/* WRAP EVERYTHING INSIDE ContactProvider */}
       <ContactProvider>
         <Router>
           <ScrollProgress />
