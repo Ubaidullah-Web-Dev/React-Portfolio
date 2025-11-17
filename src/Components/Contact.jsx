@@ -1,35 +1,32 @@
+// Contact.jsx
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { useSiteData } from "../context/SiteDataContext";
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import toast, { Toaster } from "react-hot-toast";
-import useSound from "use-sound";
+import { useContactLogic } from "./ContactLogic";
 
 function Contact() {
-    const { contactpage } = useSiteData();
+    const { messages, addMessage, deleteMessage } = useContactLogic();
 
     const nameRef = useRef();
     const emailRef = useRef();
     const messageRef = useRef();
 
-    const sendEmail = (e) => {
+    const sendMessage = (e) => {
         e.preventDefault();
 
-        emailjs.send(
-            "service_4hiq1cn",
-            "template_qdmwea2",
-            {
-                from_name: nameRef.current.value,
-                reply_to: emailRef.current.value,
-                message: messageRef.current.value,
-            },
-            "p7nwcYQBXrrMyBzXd"
-        );
+        addMessage({
+            from_name: nameRef.current.value,
+            reply_to: emailRef.current.value,
+            message: messageRef.current.value,
+        });
+
+        nameRef.current.value = "";
+        emailRef.current.value = "";
+        messageRef.current.value = "";
     };
+
     return (
         <>
-            <Toaster position="top-right" reverseOrder={false} />
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -37,14 +34,17 @@ function Contact() {
                 transition={{ duration: 0.6 }}
                 className="min-h-screen bg-white dark:bg-zinc-900 text-black dark:text-white flex flex-col items-center justify-center px-6 py-20 overflow-hidden transition-colors duration-500"
             >
+                {/* HEADER */}
                 <div data-aos="fade-up" data-aos-delay="100" className="text-center mb-10">
                     <h1 className="text-5xl font-extrabold text-pink-600 dark:text-pink-500 mb-4 tracking-tight">
-                        {contactpage.title}
+                        Contact Me
                     </h1>
                     <p className="text-gray-700 dark:text-gray-400 text-lg max-w-xl mx-auto">
-                        {contactpage.description}
+                        Feel free to send me a message anytime!
                     </p>
                 </div>
+
+                {/* FORM */}
                 <Tilt
                     tiltMaxAngleX={10}
                     tiltMaxAngleY={10}
@@ -53,7 +53,7 @@ function Contact() {
                     className="w-full max-w-2xl"
                 >
                     <form
-                        onSubmit={sendEmail}
+                        onSubmit={sendMessage}
                         data-aos="fade-up"
                         data-aos-delay="200"
                         className={
@@ -63,6 +63,7 @@ function Contact() {
                             "transition-all duration-500 rounded-2xl p-8 shadow-2xl backdrop-blur-md space-y-6"
                         }
                     >
+                        {/* NAME */}
                         <div>
                             <label className="block text-sm font-semibold mb-2 text-pink-400">
                                 Full Name
@@ -80,6 +81,8 @@ function Contact() {
                                 }
                             />
                         </div>
+
+                        {/* EMAIL */}
                         <div>
                             <label className="block text-sm font-semibold mb-2 text-pink-400">
                                 Email Address
@@ -97,6 +100,8 @@ function Contact() {
                                 }
                             />
                         </div>
+
+                        {/* MESSAGE */}
                         <div>
                             <label className="block text-sm font-semibold mb-2 text-pink-400">
                                 Message
@@ -114,6 +119,8 @@ function Contact() {
                                 }
                             ></textarea>
                         </div>
+
+                        {/* BUTTON */}
                         <div className="flex justify-center pt-4">
                             <button
                                 type="submit"
@@ -133,6 +140,41 @@ function Contact() {
                         </div>
                     </form>
                 </Tilt>
+
+                {/* MESSAGE LIST */}
+                <div className="mt-14 w-full max-w-2xl space-y-6">
+                    {messages.map((msg) => (
+                        <Tilt
+                            key={msg.id}
+                            tiltMaxAngleX={8}
+                            tiltMaxAngleY={8}
+                            glareEnable
+                            glareMaxOpacity={0.15}
+                            className="bg-white/90 dark:bg-zinc-800/80 border border-gray-300 dark:border-zinc-700 rounded-2xl p-6 shadow-xl relative"
+                        >
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4 }}
+                            >
+                                <h3 className="text-lg font-bold text-pink-500">{msg.from_name}</h3>
+                                <p className="text-sm text-gray-600 dark:text-gray-300">
+                                    {msg.reply_to}
+                                </p>
+                                <p className="mt-3 text-gray-800 dark:text-gray-200">
+                                    {msg.message}
+                                </p>
+
+                                <button
+                                    onClick={() => deleteMessage(msg.id)}
+                                    className="absolute top-4 right-4 text-red-500 font-bold text-lg hover:scale-125 transition"
+                                >
+                                    ✕
+                                </button>
+                            </motion.div>
+                        </Tilt>
+                    ))}
+                </div>
             </motion.section>
         </>
     );

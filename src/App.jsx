@@ -11,6 +11,9 @@ import ScrollToTopButton from "./Components/ScrollToTopButton";
 import Footer from "./Components/Footer";
 import { SiteDataProvider } from "./context/SiteDataContext";
 
+// ADD THIS:
+import { ContactProvider } from "./Components/ContactLogic";
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -24,19 +27,22 @@ function App() {
 
   return (
     <SiteDataProvider>
-      <Router>
-        <ScrollProgress />
-        <ScrollToTopButton />
-        <Navbar />
+      {/* WRAP EVERYTHING INSIDE ContactProvider */}
+      <ContactProvider>
+        <Router>
+          <ScrollProgress />
+          <ScrollToTopButton />
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Router>
 
-      <Footer />
+        <Footer />
+      </ContactProvider>
     </SiteDataProvider>
   );
 }
