@@ -126,9 +126,7 @@ function Contact() {
                                 <button
                                     onClick={() => deleteMessage(msg.id)}
                                     className="absolute top-4 right-4 text-red-500 font-bold text-lg hover:scale-125 transition"
-                                >
-                                    ✕
-                                </button>
+                                >✕</button>
                             </motion.div>
                         </Tilt>
                     ))}
