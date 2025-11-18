@@ -73,7 +73,39 @@
     "portfolio": {
         "caption": "LATEST PROJECTS",
         "title": "Transforming Ideas into Functional Web Experiences",
-        "description": "A collection of my front-end projects built with creativity, clean code, and a strong focus on smooth user experience and responsive design."
+        "description": "A collection of my front-end projects built with creativity, clean code, and a strong focus on smooth user experience and responsive design.",
+        "projects": [
+            {
+                "image": "/tab-image-1.png",
+                "category": "Web Development",
+                "title": "Interactive Landing Page"
+            },
+            {
+                "image": "/tab-image-2.png",
+                "category": "UI / UX Design",
+                "title": "Creative Dashboard UI"
+            },
+            {
+                "image": "/tab-image-3.png",
+                "category": "Web App",
+                "title": "Modern Portfolio Website"
+            },
+            {
+                "image": "/tab-image-4.png",
+                "category": "Animations",
+                "title": "Smooth UI Interactions"
+            },
+            {
+                "image": "/tab-image-5.png",
+                "category": "Responsive Design",
+                "title": "Mobile-First Layouts"
+            },
+            {
+                "image": "/tab-image-6.png",
+                "category": "Front-End Dev",
+                "title": "Showcase Web Project"
+            }
+        ]
     },
     "eduandexp": {
         "caption": "EDUCATION & EXPERIENCE",
@@ -152,8 +184,8 @@
             "description": "Best for professionals who need more."
         }
     },
-    "contactpage" : {
-        "title" : "Contact Us",
-        "description" : "Have a question or a project in mind? Fill out the form below, and we’ll get back to you as soon as possible."
+    "contactpage": {
+        "title": "Contact Us",
+        "description": "Have a question or a project in mind? Fill out the form below, and we’ll get back to you as soon as possible."
     }
 }
