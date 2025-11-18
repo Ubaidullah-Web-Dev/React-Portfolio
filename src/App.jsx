@@ -10,8 +10,6 @@ import ScrollProgress from "./Components/ScrollProgress";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
 import Footer from "./Components/Footer";
 import { SiteDataProvider } from "./context/SiteDataContext";
-
-// ADD THIS:
 import { ContactProvider } from "./Components/ContactLogic";
 
 function App() {
@@ -19,8 +17,6 @@ function App() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: false,
-      mirror: true,
       offset: 150,
     });
   }, []);
@@ -39,7 +35,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
-
         <Footer />
       </ContactProvider>
     </SiteDataProvider>

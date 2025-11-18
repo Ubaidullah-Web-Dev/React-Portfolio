@@ -12,7 +12,7 @@ export const SiteDataProvider = ({ children }) => {
             .catch((err) => console.error("Failed to load data.json:", err));
     }, []);
 
-    if (!siteData) return null;
+    if (!siteData) return null; // WAIT until data loads
 
     return (
         <SiteDataContext.Provider value={siteData}>

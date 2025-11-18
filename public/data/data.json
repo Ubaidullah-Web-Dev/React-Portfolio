@@ -55,20 +55,20 @@
             "second": "Web Experiences"
         },
         "description": "I design and develop responsive, user-friendly interfaces that bring ideas to life through modern, interactive, and visually captivating web solutions.",
-        "left": {
-            "card1": {
+        "left": [
+            {
                 "title": "Modern UI Development",
-                "description": "I craft visually appealing layouts using clean code, smooth animations, and a mobile-first approach to ensure an excellent user experience."
+                "description": "I craft visually appealing layouts using clean code..."
             },
-            "card2": {
+            {
                 "title": "Responsive Web Design",
-                "description": "Every project I build adapts perfectly to all device sizes — giving users a smooth and consistent experience on phones, tablets, and desktops."
+                "description": "Every project I build adapts perfectly..."
             },
-            "card3": {
+            {
                 "title": "Creative Interactions",
-                "description": "From smooth animations to fun interactions — I make websites feel alive, memorable, and full of personality."
+                "description": "From smooth animations to fun interactions..."
             }
-        }
+        ]
     },
     "portfolio": {
         "caption": "LATEST PROJECTS",
@@ -111,32 +111,32 @@
         "caption": "EDUCATION & EXPERIENCE",
         "title": "Growing Skills Through Code & Creativity",
         "description": "A journey of continuous learning — from foundational studies to building unique and performance-driven web experiences.",
-        "education": {
-            "card1": {
+        "education": [
+            {
                 "title": "Bachelor in Computer Science",
                 "time": "2019 – 2023",
                 "description": "Built strong fundamentals in programming, web technologies, and problem-solving with hands-on project development."
             },
-            "card2": {
+            {
                 "title": "Frontend Development Course",
                 "time": "2023 – Present",
                 "description": "Specialized in HTML, CSS, JavaScript, React, Tailwind, and UI best practices, ensuring strong design + development workflow."
             }
-        },
-        "experience": {
-            "card1": {
+        ],
+        "experience": [
+            {
                 "caption": "INTERNSHIP",
                 "title": "Frontend Developer Intern",
                 "time": "Creative Web Agency — 6 Months",
                 "description": "Built responsive UI components, improved website performance, and collaborated with designers to create clean modern interfaces."
             },
-            "card2": {
+            {
                 "caption": "Freelance",
                 "title": "React Developer",
                 "time": "2023 – Present",
                 "description": "Worked with clients to build landing pages, portfolio websites, and dashboards with focus on speed, usability & UI polish."
             }
-        }
+        ]
     },
     "footer": {
         "left": {
