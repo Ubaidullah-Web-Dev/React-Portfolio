@@ -15,8 +15,7 @@ function TiltCard({ index, title, description, caption, time }) {
                 {caption && (
                     <p className="text-pink-600 uppercase font-semibold text-sm mb-1">
                         {caption}
-                    </p>
-                )}
+                    </p>)}
                 <h3 className="font-bold text-lg mb-2">
                     <span className="text-pink-600 mr-2">
                         {String(index + 1)}.

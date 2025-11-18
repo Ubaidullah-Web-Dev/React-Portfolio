@@ -4,7 +4,7 @@ import { useSiteData } from "../context/SiteDataContext";
 import GenericCards from "./GenericCards";
 
 function LatestService() {
-    const { service } = useSiteData();
+    const siteData = useSiteData();
 
     return (
         <section className="relative bg-white dark:bg-black text-black dark:text-white pt-20 pb-20 overflow-hidden transition-colors duration-500">
@@ -13,19 +13,20 @@ function LatestService() {
                     data-aos="fade-right"
                     data-aos-delay="100"
                     className="text-center max-w-2xl mx-auto mb-16">
-                    <p className="text-pink-600 uppercase font-semibold tracking-widest text-sm mb-3">
-                        {service.caption}
+                    <p className="text-pink-600 uppercase font-semibold tracking-widest text-sm mb-3">{siteData.service.caption}
                     </p>
                     <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-                        {service.title.first}
+                        {siteData.service.title.first}
                         <br />
-                        {service.title.second}
+                        {siteData.service.title.second}
                     </h2>
-                    <p className="text-gray-700 dark:text-gray-400">{service.description}</p>
+                    <p className="text-gray-700 dark:text-gray-400">
+                        {siteData.service.description}
+                    </p>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div data-aos="fade-up" data-aos-delay="100" className="space-y-6">
-                        <GenericCards type="service" />
+                        <GenericCards data={siteData.service.left} />
                     </div>
                     <Tilt
                         scale={1.05}
