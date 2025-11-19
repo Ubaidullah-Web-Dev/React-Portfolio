@@ -19,6 +19,12 @@ function GenericCards({ data }) {
     //         cardData = [];
     // }
 
+    // const isValid = data.every(item => {
+    //     if (typeof item !== "object" || item === null) return false;
+    //     return Object.values(item).some(val => typeof val === "string");
+    // });
+
+
     return (
         <div className="space-y-6">
             {data.map((item, index) => (
@@ -31,7 +37,7 @@ function GenericCards({ data }) {
                         title={item.title || item.name}
                         description={item.description || item.details}
                         caption={item.caption}
-                        time={item.time}/>
+                        time={item.time} />
                 </div>
             ))}
         </div>

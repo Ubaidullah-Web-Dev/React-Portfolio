@@ -40,11 +40,13 @@
             "description": "I'm a frontend developer who loves turning ideas into smooth, interactive, and visually striking digital experiences. I focus on performance, pixel-perfect UI, and making the web a more delightful place.",
             "card1": {
                 "title": "UI Solutions",
-                "description": "Crafting sleek and scalable UI solutions with a focus on intuitive design."
+                "description": "Crafting sleek and scalable UI solutions with a focus on intuitive design.",
+                "icon": "pen"
             },
             "card2": {
                 "title": "Creative Impact",
-                "description": "Web interfaces that help brands grow and audiences connect."
+                "description": "Web interfaces that help brands grow and audiences connect.",
+                "icon": "bullhorn"
             }
         }
     },
@@ -168,21 +170,23 @@
     "pricingpage": {
         "title": "Our Pricing Plans",
         "description": "Choose the perfect plan that fits your needs and start your journey with us today.",
-        "card1": {
-            "title": "Basic",
-            "price": "$19",
-            "description": "Perfect for individuals starting out."
-        },
-        "card2": {
-            "title": "Standard",
-            "price": "$49",
-            "description": "Great for growing freelancers or small teams."
-        },
-        "card3": {
-            "title": "Premium",
-            "price": "$99",
-            "description": "Best for professionals who need more."
-        }
+        "cards": [
+            {
+                "title": "Basic",
+                "price": "$19",
+                "description": "Perfect for individuals starting out."
+            },
+            {
+                "title": "Standard",
+                "price": "$49",
+                "description": "Great for growing freelancers or small teams."
+            },
+            {
+                "title": "Premium",
+                "price": "$99",
+                "description": "Best for professionals who need more."
+            }
+        ]
     },
     "contactpage": {
         "title": "Contact Us",

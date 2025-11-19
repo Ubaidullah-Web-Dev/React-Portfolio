@@ -5,6 +5,14 @@ import { useSiteData } from "../context/SiteDataContext";
 
 function About() {
     const { about } = useSiteData();
+    const rightCards = [
+        about.right.card1,
+        about.right.card2,
+    ];
+    const iconMap = {
+        pen: <FaPenNib />,
+        bullhorn: <FaBullhorn />,
+    };
 
     return (
         <section className="relative bg-white dark:bg-black text-black dark:text-white pt-20 overflow-hidden transition-colors duration-500 pb-5">
@@ -39,27 +47,30 @@ function About() {
                         <h2 className="text-4xl md:text-5xl font-extrabold leading-snug">
                             {about.right.title.first}<br />{about.right.title.second}
                         </h2>
-                        <p className="text-gray-700 dark:text-gray-400 max-w-lg">{about.right.description}</p>
+                        <p className="text-gray-700 dark:text-gray-400 max-w-lg">
+                            {about.right.description}
+                        </p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                        <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} className="flex-1">
-                            <div className="bg-gray-100 dark:bg-zinc-900 border border-gray-300 dark:border-gray-700 transition-colors duration-300 hover:bg-pink-600/20 dark:hover:bg-pink-500/20 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)] rounded-2xl p-6">
-                                <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded-full mb-3">
-                                    <FaPenNib />
+                        {rightCards.map((card, index) => (
+                            <Tilt
+                                key={index}
+                                tiltMaxAngleX={10}
+                                tiltMaxAngleY={10}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                className="flex-1">
+                                <div className="bg-gray-100 dark:bg-zinc-900 border border-gray-300 dark:border-gray-700 hover:bg-pink-600/20 dark:hover:bg-pink-500/20 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)] transition-colors duration-300 rounded-2xl p-6">
+                                    <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded-full mb-3">
+                                        {iconMap[card.icon] || null}
+                                    </div>
+                                    <h4 className="font-bold text-lg">{card.title}</h4>
+                                    <p className="text-gray-700 dark:text-gray-400 text-sm mt-2 pb-5">
+                                        {card.description}
+                                    </p>
                                 </div>
-                                <h4 className="font-bold text-lg">{about.right.card1.title}</h4>
-                                <p className="text-gray-700 dark:text-gray-400 text-sm mt-2">{about.right.card1.description}</p>
-                            </div>
-                        </Tilt>
-                        <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} className="flex-1">
-                            <div className="bg-gray-100 dark:bg-zinc-900 border border-gray-300 dark:border-gray-700 hover:bg-pink-600/20 dark:hover:bg-pink-500/20 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)] transition-colors duration-300  rounded-2xl p-6">
-                                <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded-full mb-3">
-                                    <FaBullhorn />
-                                </div>
-                                <h4 className="font-bold text-lg">{about.right.card2.title}</h4>
-                                <p className="text-gray-700 dark:text-gray-400 text-sm mt-2 pb-5">{about.right.card2.description}</p>
-                            </div>
-                        </Tilt>
+                            </Tilt>
+                        ))}
                     </div>
                 </div>
             </div>
