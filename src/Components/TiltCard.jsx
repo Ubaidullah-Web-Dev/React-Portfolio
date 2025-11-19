@@ -4,8 +4,6 @@ import Tilt from "react-parallax-tilt";
 function TiltCard({ index, title, description, caption, time }) {
     return (
         <Tilt
-            glareEnable
-            glareMaxOpacity={0.25}
             tiltMaxAngleX={10}
             tiltMaxAngleY={10}
             className="rounded-2xl">

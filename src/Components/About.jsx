@@ -19,7 +19,7 @@ function About() {
             <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-up" data-aos-delay="100" className="relative flex flex-col space-y-6">
                     <div className="absolute -top-10 -left-20 w-72 h-72 bg-pink-700 rounded-full blur-[150px] opacity-70"></div>
-                    <Tilt glareEnable={true} glareMaxOpacity={0.3} tiltMaxAngleX={10} tiltMaxAngleY={10}>
+                    <Tilt  tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <div className="relative bg-gradient-to-b from-pink-700/40 to-gray-100 dark:to-black/60 border border-gray-300 dark:border-gray-700 hover:bg-pink-600/20 dark:hover:bg-pink-500/20 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)] transition-colors duration-300 rounded-2xl p-10 text-center shadow-lg backdrop-blur-md">
                             <h1 className="text-6xl font-extrabold mb-3">{about.left.card1.title}</h1>
                             <p className="text-2xl font-bold leading-snug">
@@ -27,7 +27,7 @@ function About() {
                             </p>
                         </div>
                     </Tilt>
-                    <Tilt glareEnable={true} glareMaxOpacity={0.3} tiltMaxAngleX={10} tiltMaxAngleY={10}>
+                    <Tilt  tiltMaxAngleX={10} tiltMaxAngleY={10}>
                         <div className="relative bg-gradient-to-b from-pink-700/10 to-gray-100 dark:to-black/60 border border-gray-300 dark:border-gray-700 hover:bg-pink-600/20 dark:hover:bg-pink-500/20 hover:border-pink-500 dark:hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)] transition-colors duration-300 rounded-2xl p-6 flex items-center space-x-5 shadow-lg backdrop-blur-md">
                             <div className="w-14 h-14 rounded-full border border-pink-600 flex items-center justify-center">
                                 <FaLock className="text-pink-600 text-2xl" />
@@ -65,7 +65,7 @@ function About() {
                                         {iconMap[card.icon] || null}
                                     </div>
                                     <h4 className="font-bold text-lg">{card.title}</h4>
-                                    <p className="text-gray-700 dark:text-gray-400 text-sm mt-2 pb-5">
+                                    <p className="text-gray-700 dark:text-gray-400 text-sm mt-2 pb-0">
                                         {card.description}
                                     </p>
                                 </div>

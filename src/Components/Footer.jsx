@@ -143,7 +143,7 @@ function Footer() {
                 data-aos="fade-right"
                 data-aos-delay="350"
                 className="container mx-auto px-6 pb-5 mt-16 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-                <p className="text-black/70 dark:text-gray-400">&copy; InverseWeb 2025 | All Rights Reserved</p>
+                <p className="text-black/70 dark:text-gray-400">&copy; Ubaid 2025 | All Rights Reserved</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
                     <a
                         href="#"
