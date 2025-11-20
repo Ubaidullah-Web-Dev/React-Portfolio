@@ -73,7 +73,7 @@ function Navbar() {
                 fill="url(#grad)"
                 fontWeight="bold"
                 className="transition-all duration-500 group-hover:drop-shadow-[0_0_12px_#ff00e6]">
-                Ubaid
+                {navbar.left}
               </text>
             </svg>
           </Link>
@@ -86,13 +86,13 @@ function Navbar() {
               : "text-black dark:text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"}`}>
             {navbar.middle.first}
           </Link>
-          <Link
+          {/* <Link
             to="/pricing"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/pricing"
               ? "bg-pink-600/40 text-black dark:text-white shadow-[0_0_10px_#ff008c]"
               : "text-black dark:text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"}`}>
             {navbar.middle.second}
-          </Link>
+          </Link> */}
           <Link
             to="/contact"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/contact"
@@ -141,12 +141,12 @@ function Navbar() {
           className="text-black dark:text-white text-lg font-medium hover:text-pink-500 transition-all duration-300">
           {navbar.middle.first}
         </Link>
-        <Link
+        {/* <Link
           to="/pricing"
           onClick={() => setIsOpen(false)}
           className="text-black dark:text-white text-lg font-medium hover:text-pink-500 transition-all duration-300">
           {navbar.middle.second}
-        </Link>
+        </Link> */}
         <Link
           to="/contact"
           onClick={() => setIsOpen(false)}
