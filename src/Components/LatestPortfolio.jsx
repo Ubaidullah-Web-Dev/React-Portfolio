@@ -21,16 +21,6 @@ function LatestPortfolio() {
                     data-aos-delay="300"
                     className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto mb-10 text-sm md:text-base">{portfolio.description}</p>
                 <div
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                    className="flex flex-wrap justify-center gap-3 mb-10">
-                    <button className="px-4 py-2 rounded-full bg-pink-600  text-white text-sm font-medium transition-all duration-300 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)]">All</button>
-                    <button className="px-4 py-2 rounded-full bg-gray-100 dark:bg-zinc-900 text-gray-700 dark:text-gray-300 hover:bg-pink-600 dark:hover:bg-pink-600 hover:border-pink-500 dark:hover:border-pink-400 hover:text-white transition-all duration-300">UI Design</button>
-                    <button className="px-4 py-2 rounded-full bg-gray-100 dark:bg-zinc-900 dark:hover:bg-pink-600 hover:border-pink-500 dark:hover:border-pink-400 text-gray-700 dark:text-gray-300 hover:bg-pink-600 hover:text-white transition-all duration-300">Web Apps</button>
-                    <button className="px-4 py-2 rounded-full bg-gray-100 dark:bg-zinc-900 dark:hover:bg-pink-600 hover:border-pink-500 dark:hover:border-pink-400 hover:text-white text-gray-700 dark:text-gray-300 hover:bg-pink-600 transition-all duration-300">Animations</button>
-                    <button className="px-4 py-2 rounded-full bg-gray-100 dark:bg-zinc-900 dark:hover:bg-pink-600 hover:border-pink-500 dark:hover:border-pink-400 text-gray-700 dark:text-gray-300 hover:bg-pink-600 hover:text-white transition-all duration-300">Responsive</button>
-                </div>
-                <div
                     data-aos="fade-up"
                     data-aos-delay="500"
                     className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

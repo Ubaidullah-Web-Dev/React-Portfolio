@@ -1,52 +1,59 @@
 {
     "navbar": {
-        "left" : "Ubaid",
+        "left": "Maroof",
         "middle": {
             "first": "Home",
-            "second": "Pricing",
             "third": "Contact"
+        },
+        "right": {
+            "github": "https://github.com/MaroofSultan17",
+            "linkedin": "https://www.linkedin.com/in/maroof-sultan-081b33220/",
+            "whatsapp": "https://wa.me/923106510421"
         }
     },
     "hero": {
         "greetings": "HELLO",
-        "name": "I'm Ubaidullah",
+        "name": "I'm Maroof Sultan",
         "typed": [
-            "A Developer.",
-            "A Thinker.",
-            "A Coder."
+            "Laravel",
+            "Full-Stack",
+            "PHP",
+            "My SQL",
+            "Next.js",
+            "CI/CD"
         ],
-        "description": "Front-end creativity brought to life with clean visuals and joyful interactions. ",
+        "description": "Laravel Developer skilled in building scalable, performance-driven web applications with modern technologies and best practices.",
         "button": "View Projects"
     },
     "about": {
         "left": {
             "card1": {
-                "title": "Front-End",
+                "title": "Back-End",
                 "description": {
-                    "first": "Developer &",
-                    "second": "UI Enthusiast"
+                    "first": "Laravel &",
+                    "second": "API Specialist"
                 }
             },
             "card2": {
-                "title": "Pixel Perfect UI",
-                "description": "Responsive & Modern Layouts"
+                "title": "Performance & Security",
+                "description": "Optimized Systems & Best Practices"
             }
         },
         "right": {
             "caption": "ABOUT ME",
             "title": {
-                "first": "Turning Concepts into",
-                "second": "Interactive Experiences"
+                "first": "Building Scalable &",
+                "second": "High-Performance Solutions"
             },
-            "description": "I'm a frontend developer who loves turning ideas into smooth, interactive, and visually striking digital experiences. I focus on performance, pixel-perfect UI, and making the web a more delightful place.",
+            "description": "I'm a Laravel Developer experienced in designing, developing, and deploying scalable web applications. I specialize in backend architecture, REST APIs, real-time apps using WebSockets, and system performance optimization with tools like Redis and CI/CD pipelines.",
             "card1": {
-                "title": "UI Solutions",
-                "description": "Crafting sleek and scalable UI solutions with a focus on intuitive design.",
+                "title": "API Development",
+                "description": "Secure & optimized REST APIs for mobile and third-party integrations.",
                 "icon": "pen"
             },
             "card2": {
-                "title": "Creative Impact",
-                "description": "Web interfaces that help brands grow and audiences connect.",
+                "title": "Full-Stack Solutions",
+                "description": "Laravel + Next.js solutions with high scalability and impact.",
                 "icon": "bullhorn"
             }
         }
@@ -54,100 +61,112 @@
     "service": {
         "caption": "WHAT I DO",
         "title": {
-            "first": "Crafting Creative Front-End",
-            "second": "Web Experiences"
+            "first": "Developing Robust &",
+            "second": "Scalable Web Systems"
         },
-        "description": "I design and develop responsive, user-friendly interfaces that bring ideas to life through modern, interactive, and visually captivating web solutions.",
+        "description": "I specialize in backend development, high-performance systems, and seamless API integrations using Laravel and modern web technologies.",
         "left": [
             {
-                "title": "Modern UI Development",
-                "description": "I craft visually appealing layouts using clean code..."
+                "title": "Laravel Development",
+                "description": "Designing and developing modular, scalable, and high-performance Laravel applications."
             },
             {
-                "title": "Responsive Web Design",
-                "description": "Every project I build adapts perfectly..."
+                "title": "API & Real-Time Systems",
+                "description": "Building secure REST APIs and real-time solutions using WebSockets and Laravel Echo."
             },
             {
-                "title": "Creative Interactions",
-                "description": "From smooth animations to fun interactions..."
+                "title": "CI/CD & Deployment",
+                "description": "Automating deployments and enforcing clean code standards using GitLab CI/CD pipelines."
             }
-        ]
+        ],
+        "right" : {
+            "image" : "/file.jpg"
+        }
     },
     "portfolio": {
         "caption": "LATEST PROJECTS",
-        "title": "Transforming Ideas into Functional Web Experiences",
-        "description": "A collection of my front-end projects built with creativity, clean code, and a strong focus on smooth user experience and responsive design.",
+        "title": "Turning Ideas into Web Experiences",
+        "description": "A collection of Laravel-based projects with real-time capabilities, high performance, and scalable architecture.",
         "projects": [
             {
-                "image": "/tab-image-1.png",
-                "category": "Web Development",
-                "title": "Interactive Landing Page"
+                "image": "/CRMDash.png",
+                "category": "E-Commerce",
+                "title": "Gempacked – Full-scale Laravel eCommerce"
             },
             {
-                "image": "/tab-image-2.png",
-                "category": "UI / UX Design",
-                "title": "Creative Dashboard UI"
+                "image": "/CRMDash.png",
+                "category": "Trading Platform",
+                "title": "Inflaguard – Currency Trading System"
             },
             {
-                "image": "/tab-image-3.png",
-                "category": "Web App",
-                "title": "Modern Portfolio Website"
+                "image": "/CRMDash.png",
+                "category": "Event Platform",
+                "title": "EvenScout – Event Booking with Stripe"
             },
             {
-                "image": "/tab-image-4.png",
-                "category": "Animations",
-                "title": "Smooth UI Interactions"
+                "image": "/CRMDash.png",
+                "category": "CRM / Dashboard",
+                "title": "CRM Dashboard – Analytics + WebSockets"
             },
             {
-                "image": "/tab-image-5.png",
-                "category": "Responsive Design",
-                "title": "Mobile-First Layouts"
+                "image": "/CRMDash.png",
+                "category": "Scalable Backend",
+                "title": "Optimization & Queuing Systems"
             },
             {
-                "image": "/tab-image-6.png",
-                "category": "Front-End Dev",
-                "title": "Showcase Web Project"
+                "image": "/CRMDash.png",
+                "category": "Full-Stack",
+                "title": "Laravel + Next.js Freelance Solutions"
             }
         ]
     },
     "eduandexp": {
         "caption": "EDUCATION & EXPERIENCE",
         "title": "Growing Skills Through Code & Creativity",
-        "description": "A journey of continuous learning — from foundational studies to building unique and performance-driven web experiences.",
+        "description": "A journey of professional growth—from foundational studies to building robust, enterprise-grade web applications.",
         "education": [
             {
-                "title": "Bachelor in Computer Science",
-                "time": "2019 – 2023",
-                "description": "Built strong fundamentals in programming, web technologies, and problem-solving with hands-on project development."
+                "title": "BS Computer Science",
+                "time": "Sep 2021 – Sep 2025",
+                "description": "COMSATS University Islamabad — CGPA: 3.80/4.00"
             },
             {
-                "title": "Frontend Development Course",
-                "time": "2023 – Present",
-                "description": "Specialized in HTML, CSS, JavaScript, React, Tailwind, and UI best practices, ensuring strong design + development workflow."
+                "title": "Full-Stack Development Learning",
+                "time": "2024 – Present",
+                "description": "Specializing in Laravel, PHP, MySQL, Redis, REST APIs, CI/CD pipelines, and performance-focused development."
             }
         ],
         "experience": [
             {
-                "caption": "INTERNSHIP",
-                "title": "Frontend Developer Intern",
-                "time": "Creative Web Agency — 6 Months",
-                "description": "Built responsive UI components, improved website performance, and collaborated with designers to create clean modern interfaces."
+                "caption": "EMPLOYMENT",
+                "title": "Laravel Developer — Hidden Logics",
+                "time": "Sep 2024 – Present",
+                "description": "Developing scalable Laravel applications, integrating Stripe/PayPal, optimizing databases, and implementing WebSockets."
             },
             {
-                "caption": "Freelance",
-                "title": "React Developer",
-                "time": "2023 – Present",
-                "description": "Worked with clients to build landing pages, portfolio websites, and dashboards with focus on speed, usability & UI polish."
+                "caption": "FREELANCE",
+                "title": "Full-Stack Developer",
+                "time": "Dec 2024 – Sep 2025",
+                "description": "Delivering Laravel + Next.js solutions, debugging and optimizing e-commerce platforms, consulting for client success."
+            },
+            {
+                "caption": "INTERNSHIP",
+                "title": "Laravel Developer Intern — Hidden Logics",
+                "time": "Jul 2024 – Sep 2024",
+                "description": "Assisted in backend development and collaborated with senior engineers to build scalable features."
             }
-        ]
+        ],
+        "right" : {
+            "image" : "/MaroofGithub.jpg"
+        }
     },
     "footer": {
         "left": {
-            "caption": "</>Ubaid",
+            "caption": "</>Maroof",
             "title": {
-                "first": "Get Ready ",
-                "second": "To Create ",
-                "third": "Great"
+                "first": "Let’s Build ",
+                "second": "Something ",
+                "third": "Impactful"
             }
         },
         "middle": {
@@ -156,38 +175,32 @@
                 "first": "About Me",
                 "second": "Service",
                 "third": "Contact Me",
-                "fourth": "Pricing"
+                "fourth": "Projects"
             }
         },
         "right": {
             "title": "Contact",
             "links": {
-                "first": "ubaidullah.web.dev@gmail.com",
-                "second": "3891 Ranchview Dr. Richardson",
-                "third": "03287231804"
+                "first": "maroofsultan.dev@gmail.com",
+                "firstlink": "mailto:maroofsultan.dev@gmail.com",
+                "second": "Sahiwal,Pakistan",
+                "third": "+92 310 6510421",
+                "thirdlink": "https://wa.me/923106510421"
+            },
+            "buttons": {
+                "github": "https://github.com/MaroofSultan17",
+                "linkedin": "https://www.linkedin.com/in/maroof-sultan-081b33220/",
+                "whatsapp": "https://wa.me/923106510421"
+            }
+        },
+        "bottom" : {
+            "left" : "Maroof 2025 | All Rights Reserved",
+            "right" : {
+                "first": "Terms & Condition",
+                "second" : "Privacy Policy",
+                "third" : "Contact Us"
             }
         }
-    },
-    "pricingpage": {
-        "title": "Our Pricing Plans",
-        "description": "Choose the perfect plan that fits your needs and start your journey with us today.",
-        "cards": [
-            {
-                "title": "Basic",
-                "price": "$19",
-                "description": "Perfect for individuals starting out."
-            },
-            {
-                "title": "Standard",
-                "price": "$49",
-                "description": "Great for growing freelancers or small teams."
-            },
-            {
-                "title": "Premium",
-                "price": "$99",
-                "description": "Best for professionals who need more."
-            }
-        ]
     },
     "contactpage": {
         "title": "Contact Us",

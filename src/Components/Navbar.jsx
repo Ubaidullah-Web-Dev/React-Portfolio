@@ -104,20 +104,20 @@ function Navbar() {
         <div className="hidden md:flex items-center space-x-3 shrink-0">
           <ThemeToggle />
           <a
-            href="https://github.com/Ubaidullah-Web-Dev?tab=repositories"
+            href={navbar.right.github}
             className="relative p-2 flex items-center justify-center overflow-hidden bg-gray-200 dark:bg-gray-800 rounded-full group">
             <span className="absolute inset-0 rounded-full bg-pink-600 scale-0 transition-transform duration-500 ease-out origin-center group-hover:scale-100"></span>
             <FaGithub className="relative text-gray-700 dark:text-gray-400 text-lg transition-all duration-300 group-hover:text-white group-hover:scale-125" />
           </a>
           <a
-            href="https://www.linkedin.com/in/ubaidullah-sajid-21792a383/"
+            href={navbar.right.linkedin}
             className="relative p-2 flex items-center justify-center overflow-hidden rounded-full bg-gray-200 dark:bg-gray-800 group">
             <span className="absolute inset-0 rounded-full bg-pink-600 scale-0 transition-transform duration-500 ease-out origin-center group-hover:scale-100"></span>
             <FaLinkedinIn className="relative text-gray-700 dark:text-gray-400 text-lg transition-all duration-300 group-hover:text-white group-hover:scale-125" />
           </a>
 
           <a
-            href="https://wa.me/923287231804"
+            href={navbar.right.whatsapp}
             className="relative p-2 flex items-center justify-center rounded-full overflow-rounded-full bg-gray-200 dark:bg-gray-800 group">
             <span className="absolute inset-0 bg-pink-600 scale-0 transition-transform duration-500 ease-out origin-center group-hover:scale-100 rounded-full"></span>
             <FaWhatsapp className="relative text-gray-700 dark:text-gray-400 text-lg transition-all duration-300 group-hover:text-white group-hover:scale-125" />
@@ -155,17 +155,17 @@ function Navbar() {
         </Link>
         <div className="flex flex-wrap justify-center space-x-4 pt-3">
           <a
-            href="https://github.com/Ubaidullah-Web-Dev?tab=repositories"
+            href={navbar.right.github}
             className="bg-gray-200 dark:bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
             <FaGithub className="text-black dark:text-white transition-all duration-300 hover:scale-125" />
           </a>
           <a
-            href="https://www.linkedin.com/in/ubaidullah-sajid-21792a383/"
+            href={navbar.right.linkedin}
             className="bg-gray-200 dark:bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
             <FaLinkedin className="text-black dark:text-white transition-all duration-300 hover:scale-125" />
           </a>
           <a
-            href="https://wa.me/923287231804"
+            href={navbar.right.whatsapp}
             className="bg-gray-200 dark:bg-gray-800 hover:bg-pink-600 p-2 rounded-full">
             <FaWhatsapp className="text-black dark:text-white transition-all duration-300 hover:scale-125" />
           </a>

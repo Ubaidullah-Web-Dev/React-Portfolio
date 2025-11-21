@@ -23,10 +23,14 @@ function EducationExperience() {
                     <h3 className="text-xl font-bold">Education</h3>
                     <div className="h-px w-12 bg-gray-400 dark:bg-gray-600"></div>
                 </div>
-                <div className="grid md:grid-cols-1 gap-6 mb-20">
-                    <GenericCards data={siteData.eduandexp.education} />
+                <div className="flex flex-col md:flex-row gap-6 mb-20">
+                    {siteData.eduandexp.education.map((item) => (
+                        <div key={item.title} className="flex-1">
+                            <GenericCards data={[item]} />
+                        </div>
+                    ))}
                 </div>
-                <div data-aos="fade-up" data-aos-delay="150" className="mb-6 mt-16 flex items-center gap-2">
+                <div data-aos="fade-up" data-aos-delay="150" className="mb-6 mt-1 flex items-center gap-2">
                     <h3 className="text-xl font-bold">Experience</h3>
                     <div className="h-px w-12 bg-gray-400 dark:bg-gray-600"></div>
                 </div>
@@ -48,7 +52,7 @@ function EducationExperience() {
                             className="rounded-3xl overflow-hidden shadow-2xl border border-gray-300 dark:border-gray-700 hover:border-pink-600 duration-500">
                             <div className="relative">
                                 <img
-                                    src="expert-img.jpg"
+                                    src={siteData.eduandexp.right.image}
                                     alt="Frontend Developer at work"
                                     className="relative w-full h-full object-cover rounded-3xl scale-100 hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                 <div className="absolute inset-0 bg-black/30"></div>
