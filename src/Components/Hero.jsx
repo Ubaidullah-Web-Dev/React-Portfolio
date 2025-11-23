@@ -46,7 +46,7 @@ function Hero() {
         <Tilt
           scale={1.05}
           transitionSpeed={2500}
-          tiltMaxAngleX={10}
+          tiltMaxAngleX={20}
           tiltMaxAngleY={10}
           className="flex-1 flex lg:pe-20 justify-center md:justify-end"
         >
@@ -55,7 +55,7 @@ function Hero() {
             <img
               src= "/Adobe Express - file.png"
               alt="Front-End Developer"
-              className="relative border-2 border-dotted border-pink-600 z-10 w-52 sm:w-64 md:w-80 lg:w-[450px] object-contain hover:scale-105 transition-transform duration-700 ease-out rounded-full"
+              className="relative border-2 border-dotted border-pink-600 z-10 w-96 sm:w-64 md:w-96 lg:w-[450px] object-contain hover:scale-105 transition-transform duration-700 ease-out rounded-full"
             />
           </div>
         </Tilt>
