@@ -3,10 +3,7 @@ import React from "react";
 export default function PageLoader() {
     return (
         <div className="h-screen flex items-center justify-center overflow-hidden relative bg-darkBg">
-            {/* Blurred Neon Background */}
             <div className="absolute h-[60vw] bg-gradient-to-r from-neonPurple via-neonPink to-neonPurple opacity-30 blur-3xl animate-glowPulse"></div>
-
-            {/* Lines Spinner */}
             <div className="flex gap-2 relative z-10">
                 {[1, 2, 3, 4, 5].map((line) => (
                     <div

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import MainPage from "./Components/MainPage";
 import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
