@@ -12,15 +12,21 @@ export default {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' },
 				},
+				glowPulse: {
+					'0%, 100%': { opacity: 0.6, filter: 'blur(4px)' },
+					'50%': { opacity: 1, filter: 'blur(12px)' },
+				},
 			},
 			animation: {
 				lineMove: 'lineMove 0.8s ease-in-out infinite',
+				glowPulse: 'glowPulse 1.2s ease-in-out infinite',
 			},
 			colors: {
-				neonPurple: '#9b5cff',
-				darkBg: '#0b0f19',
+				neonPurple: '#b27bff',
+				neonPink: '#ff36aa',
+				darkBg: '#05060e',
 			},
 		},
 	},
 	plugins: [],
-}
+};
