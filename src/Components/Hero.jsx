@@ -1,18 +1,35 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { useSiteData } from "../context/SiteDataContext";
+import FlowingMenu from "./FlowingMenu";
+import Dither from "./Dither";
+
+const demoItems = [
+  { link: '#', text: 'Ubaid', image: 'upscalar.jpg' },
+  { link: '#', text: 'Sameer', image: 'https://picsum.photos/600/400?random=2' },
+  { link: '#', text: 'Ali', image: 'https://picsum.photos/600/400?random=3' },
+  { link: '#', text: 'Maroof', image: 'https://picsum.photos/600/400?random=4' },
+  { link: '#', text: 'Shahbaz', image: 'https://picsum.photos/600/400?random=4' },
+];
 
 function Hero() {
   const { hero } = useSiteData();
 
   return (
     <section
-      className="relative z-10 bg-white dark:bg-black text-black dark:text-white bg-cover bg-center bg-fixed lg:bg-size-[auto_105%] bg-no-repeat transition-colors duration-500"
-      style={{
-        backgroundImage: "url('/bg-image-3.jpg')",
-        backgroundPosition: "center",
-      }}>
-      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-black/40 dark:from-black/80 dark:via-black/50 dark:to-transparent transition-all duration-500"></div>
+      className="relative z-30 bg-white dark:bg-black text-black dark:text-white overflow-hidden">
+      <div className="-z-10" style={{ width: '100%', height: '600px', position: 'absolute' }}>
+
+        <Dither
+          waveColor={[0.5, 0.5, 0.5]}
+          disableAnimation={false}
+          enableMouseInteraction={true}
+          mouseRadius={0.3}
+          colorNum={4}
+          waveAmplitude={0.3}
+          waveFrequency={3}
+          waveSpeed={0.05}/>
+      </div>
       <div
         data-aos="fade-up"
         data-aos-delay="100"
@@ -29,8 +46,7 @@ function Hero() {
             typeSpeed={70}
             backSpeed={40}
             backDelay={1500}
-            loop
-          />
+            loop/>
         </h2>
         <p className="text-gray-400 dark:text-gray-300 text-md md:text-lg max-w-xl leading-relaxed mt-4">
           {hero.description}
@@ -42,6 +58,9 @@ function Hero() {
             {hero.button}
           </span>
         </button>
+      </div>
+      <div className="h-[600px] relative">
+        <FlowingMenu items={demoItems} />
       </div>
     </section>
   );
