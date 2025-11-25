@@ -1,16 +1,43 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import MainPage from "./Components/MainPage";
-import Pricing from "./Components/Pricing";
 import Contact from "./Components/Contact";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import ScrollProgress from "./Components/ScrollProgress";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
-import Footer from "./Components/Footer";
+import PageLoader from "./Components/PageLoader";
 import { SiteDataProvider } from "./context/SiteDataContext";
 import { ContactProvider } from "./Components/ContactLogic";
+
+function AppContent() {
+  const location = useLocation();
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    const timer = setTimeout(() => setIsLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  return isLoading ? (
+    <PageLoader />
+  ) : (
+    <>
+      <ScrollProgress />
+      <ScrollToTopButton />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   useEffect(() => {
@@ -25,17 +52,8 @@ function App() {
     <SiteDataProvider>
       <ContactProvider>
         <Router>
-          <ScrollProgress />
-          <ScrollToTopButton />
-          <Navbar />
-
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <AppContent />
         </Router>
-        <Footer />
       </ContactProvider>
     </SiteDataProvider>
   );

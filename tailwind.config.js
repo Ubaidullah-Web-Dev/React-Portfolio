@@ -7,17 +7,18 @@ export default {
 	],
 	theme: {
 		extend: {
-			translate: {
-				'101': '101%',
-			},
 			keyframes: {
-				marquee: {
-					from: { transform: 'translateX(0%)' },
-					to: { transform: 'translateX(-50%)' },
+				lineMove: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				},
 			},
 			animation: {
-				marquee: 'marquee 15s linear infinite',
+				lineMove: 'lineMove 0.8s ease-in-out infinite',
+			},
+			colors: {
+				neonPurple: '#9b5cff',
+				darkBg: '#0b0f19',
 			},
 		},
 	},
