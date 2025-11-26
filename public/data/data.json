@@ -172,17 +172,20 @@
         {
             "image": "/TechLogo.png",
             "category": "Web Development",
-            "title": "Interactive Landing Page"
+            "title": "Interactive Landing Page",
+            "link" : "https://teach-logo-psd.vercel.app/"
+        },
+        {
+            "image": "/Portfolio.png",
+            "category": "Portfolio",
+            "title": "Creative Portfolio",
+            "link" : "https://portfolio-chi-eight-97cgi415mw.vercel.app/"
         },
         {
             "image": "/Paywise.png",
-            "category": "UI / UX Design",
-            "title": "Creative Dashboard UI"
-        },
-        {
-            "image": "/Weather.png",
-            "category": "Web App",
-            "title": "Modern Portfolio Website"
+            "category": "Payment",
+            "title": "Modern Payment website",
+            "link" : "https://pay-wise-psd.vercel.app/"
         }
     ],
     "contactpage": {
