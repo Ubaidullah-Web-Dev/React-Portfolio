@@ -48,7 +48,7 @@ function Hero() {
             backDelay={1500}
             loop/>
         </h2>
-        <p className="text-gray-400 dark:text-gray-300 text-md md:text-lg max-w-xl leading-relaxed mt-4">
+        <p className="text-white dark:text-white text-md md:text-lg max-w-xl leading-relaxed mt-4">
           {hero.description}
         </p>
         <button className="relative mt-8 bg-pink-600 dark:bg-pink-500 text-white font-semibold px-6 py-3 rounded-full overflow-hidden group transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] dark:hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]">

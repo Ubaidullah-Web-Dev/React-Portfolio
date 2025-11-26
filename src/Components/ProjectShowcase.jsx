@@ -6,7 +6,7 @@ export default function ProjectShowcase() {
     const { projectspage } = useSiteData();
 
     return (
-        <div className="mx-auto bg-white dark:bg-black text-black dark:text-white px-4 py-12">
+        <div className="mx-auto bg-white dark:bg-zinc-900 text-black dark:text-white px-4 py-12">
             <h1 className="text-5xl font-extrabold mt-10 text-center text-pink-600 dark:text-pink-500 mb-4 tracking-tight">
                 Projects
             </h1>
@@ -41,9 +41,6 @@ function ProjectCard({ project }) {
 
     return (
         <Tilt
-            glareEnable={true}
-            glareMaxOpacity={0.4}
-            glareColor="#ec4899"
             tiltMaxAngleX={10}
             tiltMaxAngleY={10}
             className="rounded-2xl bg-gradient-to-b from-gray-100 dark:from-zinc-900 to-white dark:to-black border border-pink-700 p-4 hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] transition-all duration-500">

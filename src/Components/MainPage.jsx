@@ -11,7 +11,6 @@ function MainPage() {
             <Hero />
             <About />
             <LatestService />
-            <LatestPortfolio />
             <EducationExperience />
         </>
     );

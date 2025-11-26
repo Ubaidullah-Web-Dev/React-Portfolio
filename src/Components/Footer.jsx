@@ -11,7 +11,6 @@ function Footer() {
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div data-aos="fade-up" data-aos-delay="200">
                     <div className="flex items-center mb-4">
-                        <img src="emojione_star.png" alt="logo" className="w-8 h-8 object-contain" />
                         <span className="text-pink-600 text-3xl font-extrabold">{footer.left.caption}</span>
                     </div>
                     <h2 className="text-black dark:text-white text-4xl md:text-5xl font-extrabold leading-tight mb-8">
