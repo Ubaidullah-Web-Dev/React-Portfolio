@@ -11,6 +11,7 @@ import ScrollToTopButton from "./Components/ScrollToTopButton";
 import PageLoader from "./Components/PageLoader";
 import { SiteDataProvider } from "./context/SiteDataContext";
 import { ContactProvider } from "./Components/ContactLogic";
+import ProjectShowcase from "./Components/ProjectShowcase";
 
 function AppContent() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/project" element={<ProjectShowcase/>} />
       </Routes>
       <Footer />
     </>

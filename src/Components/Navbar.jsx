@@ -86,13 +86,13 @@ function Navbar() {
               : "text-black dark:text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"}`}>
             {navbar.middle.first}
           </Link>
-          {/* <Link
-            to="/pricing"
-            className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/pricing"
+          <Link
+            to="/project"
+            className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/project"
               ? "bg-pink-600/40 text-black dark:text-white shadow-[0_0_10px_#ff008c]"
               : "text-black dark:text-white hover:bg-pink-600/40 hover:shadow-[0_0_10px_#ff008c]"}`}>
             {navbar.middle.second}
-          </Link> */}
+          </Link>
           <Link
             to="/contact"
             className={`text-md font-bold px-4 py-1 rounded-lg border border-pink-700 transition-all duration-300 whitespace-nowrap ${location.pathname === "/contact"

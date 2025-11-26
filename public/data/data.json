@@ -1,9 +1,9 @@
 {
     "navbar": {
-        "left" : "Ubaid",
+        "left": "Ubaid",
         "middle": {
             "first": "Home",
-            "second": "Pricing",
+            "second": "Projects",
             "third": "Contact"
         }
     },
@@ -168,27 +168,23 @@
             }
         }
     },
-    "pricingpage": {
-        "title": "Our Pricing Plans",
-        "description": "Choose the perfect plan that fits your needs and start your journey with us today.",
-        "cards": [
-            {
-                "title": "Basic",
-                "price": "$19",
-                "description": "Perfect for individuals starting out."
-            },
-            {
-                "title": "Standard",
-                "price": "$49",
-                "description": "Great for growing freelancers or small teams."
-            },
-            {
-                "title": "Premium",
-                "price": "$99",
-                "description": "Best for professionals who need more."
-            }
-        ]
-    },
+    "projectspage": [
+        {
+            "image": "/TechLogo.png",
+            "category": "Web Development",
+            "title": "Interactive Landing Page"
+        },
+        {
+            "image": "/Paywise.png",
+            "category": "UI / UX Design",
+            "title": "Creative Dashboard UI"
+        },
+        {
+            "image": "/Weather.png",
+            "category": "Web App",
+            "title": "Modern Portfolio Website"
+        }
+    ],
     "contactpage": {
         "title": "Contact Us",
         "description": "Have a question or a project in mind? Fill out the form below, and we’ll get back to you as soon as possible."
