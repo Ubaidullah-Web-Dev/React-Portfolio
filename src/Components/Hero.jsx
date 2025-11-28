@@ -1,16 +1,8 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { useSiteData } from "../context/SiteDataContext";
-import FlowingMenu from "./FlowingMenu";
 import Dither from "./Dither";
 
-const demoItems = [
-  { link: '#', text: 'Ubaid', image: 'upscalar.jpg' },
-  { link: '#', text: 'Sameer', image: 'https://picsum.photos/600/400?random=2' },
-  { link: '#', text: 'Ali', image: 'https://picsum.photos/600/400?random=3' },
-  { link: '#', text: 'Maroof', image: 'https://picsum.photos/600/400?random=4' },
-  { link: '#', text: 'Shahbaz', image: 'https://picsum.photos/600/400?random=4' },
-];
 
 function Hero() {
   const { hero } = useSiteData();
@@ -60,9 +52,6 @@ function Hero() {
           </span>
         </button>
         </a>
-      </div>
-      <div className="h-[600px] relative">
-        <FlowingMenu items={demoItems} />
       </div>
     </section>
   );
